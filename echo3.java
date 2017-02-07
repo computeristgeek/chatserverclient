@@ -97,6 +97,7 @@ public class echo3 extends Thread {
 				//if disconnected, tell the server and wait for another user
 				else
 				{
+					System.out.println("User no."+user_num+" Has Exited");
 					arrConnected[user_num]=false;
 					clientSocket = echoServer.accept();
 					is = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
